@@ -11,6 +11,7 @@
       <title></title> 
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
       <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
       
     
@@ -22,6 +23,21 @@
         <title>Store
         </title>
       
+        <script>
+          $(document).ready(function()
+          {
+            $("sumar").click(function()
+            {
+              var  n1=$("quantity1").val();
+              var  n2=$("quantity2").val();
+              var  n3=$("quantity3").val();
+
+              var suma= n1 + n2 + n3;
+              $("resultado").val(suma);
+            });
+          });
+        </script>
+
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       
@@ -45,6 +61,9 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
+                <a class="nav-link" href="Comentario.html">Ayudanos a mejorar</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="Quienessomos.html">Quienes somos</a>
               </li>
               <li class="nav-item">
@@ -65,22 +84,9 @@
   <div class="container">
 
     <form role="form" method="post" action="index.html">
-      <div class="form-group"> 
-        <label for="nombre">Ingrese su nombre:</label>
-        <input type="text" class="form-control" id="nombre">
-      </div> 
-      <div class="form-group"> 
-        <label for="correo">Ingrese su correo:</label>
-        <input type="text" class="form-control" id="correo">
-      </div> 
-
-      
-      <hr>
-      <!-- checkbox ubicados uno debajo del otro-->
-      
-      <hr>
       <!-- radiobutton ubicados uno debajo del otro-->
-      <label>Seleccione metodo de pago</label>
+      <div class="form-group">
+        <label>- Seleccione metodo de pago</label>
       <div class="form-check">
         <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
         <label class="form-check-label" for="radio1">
@@ -101,99 +107,98 @@
           RedCompra
         </label>
       </div>
-        <br>
+      <br>
+      <label for="ntarjeta">- Numero de Tarjeta:</label><br>
+        <input type="text" id="ntarjeta" class="form-control" value=""><br>
+        <label for="vverifi">- Valor Verificador:</label><br>
+        <input type="password" id="vverifi" class="form-control" value=""><br>
+
+        <hr>
         <br>
       <!--checknox En la misma linea-->
-       <label>seleccione la carta a comprar </label>
-       <br>
-       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          balaur-Monstruoso
-        </label>
-      </div>
+      <label for="quantity"> - Ingrese su Compra: </label>
+      <select id="combocartas" name="combocartas" class="form-control">
+        <option value="balaurmonstruoso">- Balaur Monstruoso</option>
+        <option value="fafnir">- Fafnir</option>
+        <option value="dragondemagmasp">- Dragon de Magma SP</option>
+        <option value="apophissp">- Apophis SP</option>
+        <option value="alicanto">- Alicanto</option>
+        <option value="piratasvandalos">- Piratas Vandalos</option>
+        <option value="baihequan">- Bai He Quan</option>
+        <option value="jofiel">- Jofiel</option>
+        <option value="nganga">- Nganga</option>
+        <option value="hadesdelinframundo">- Hades del Inframundo</option>
+      </select>
+      <br>
+      <input type="number" value="0" id="quantity1" class="form-control" min="1" max="99">
+      <br>
 
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Fafnir
-        </label>
-      </div>
+      <label for="quantity"> - Ingrese su Compra: </label>
+      <select id="combocartas" name="combocartas" class="form-control">
+        <option value="balaurmonstruoso">- Balaur Monstruoso</option>
+        <option value="fafnir">- Fafnir</option>
+        <option value="dragondemagmasp">- Dragon de Magma SP</option>
+        <option value="apophissp">- Apophis SP</option>
+        <option value="alicanto">- Alicanto</option>
+        <option value="piratasvandalos">- Piratas Vandalos</option>
+        <option value="baihequan">- Bai He Quan</option>
+        <option value="jofiel">- Jofiel</option>
+        <option value="nganga">- Nganga</option>
+        <option value="hadesdelinframundo">- Hades del Inframundo</option>
+      </select>
+      <br>
+      <input type="number" value="0" id="quantity2" class="form-control" min="1" max="99">
+      <br>
 
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Dragon-De-Magma-SP
-        </label>
-      </div>
-
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Apophis-SP
-        </label>
-      </div>
-
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Alicanto
-        </label>
-      </div>
-
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Piratas-Vandalos
-        </label>
-      </div>
+      <label for="quantity"> - Ingrese su Compra: </label>
+      <select id="combocartas" name="combocartas" class="form-control">
+        <option value="balaurmonstruoso">- Balaur Monstruoso</option>
+        <option value="fafnir">- Fafnir</option>
+        <option value="dragondemagmasp">- Dragon de Magma SP</option>
+        <option value="apophissp">- Apophis SP</option>
+        <option value="alicanto">- Alicanto</option>
+        <option value="piratasvandalos">- Piratas Vandalos</option>
+        <option value="baihequan">- Bai He Quan</option>
+        <option value="jofiel">- Jofiel</option>
+        <option value="nganga">- Nganga</option>
+        <option value="hadesdelinframundo">- Hades del Inframundo</option>
+      </select>
+      <br>
+      <input type="number" value="0" id="quantity3" class="form-control" min="1" max="99">
+      <br>
 
       
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Bai-He-Quan
-        </label>
-      </div>
-
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Jofiel
-        </label>
-      </div>
-
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Nganga
-        </label>
-      </div>
-
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
-        <label class="form-check-label" for="radio4">
-          Hades-del-inframundo
-        </label>
-      </div>
+      <label>- Total de Cartas</label>
+      <input type="number" id="resultado" name="resultado">
+      <button type="button" id="sumar" class="btn btn-danger" > Sumar Total de Cartas </button>
+      <br>
+      <br>
+      <br>
       <hr>
-     
-      
-      
-      
-      <!-- select con selección múltiple de elementos--> 
-      <div class="form-group"> 
-        <label for="comentarios">Deje aquí sus comentarios</label>
-        <textarea class="form-control" rows="5" id="comentarios" name="comentarios"></textarea>
-      </div> 
-      
-
+      <br>
+      <button type="reset" class="btn btn-danger" > Limpiar </button>
+      <a href="Gracias.html" target="_blank" class="btn btn-primary" id="confirmarcompra"> Finalizar </a>
       <br>
       <br>
 
-      <button type="submit" class="btn btn-danger" >Comprar</button> 
-    </form>
-
+      <br>
+      <br>
+      <br>
+      </form>
+      </div>
   </div> 
+
+  
+  <footer class="py-5 bg-black">
+    <div class="container">
+        <p class="m-0 left text-white small">Instagram: TiendaTCG-Oficial</p>
+        <p class="m-0 left text-white small">Facebook:  TiendaTCG-Oficial</p>
+        <p class="m-0 left text-white small">Twitter:   TiendaTCG</p>
+        <p class="m-0 left text-white small">Fono de Contacto: +58 9 4476 5179</p>
+        <br>
+        <p class="m-0 text-center text-white small">Copyright &copy; TiendaTCG 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 </body> 
 </html> 
