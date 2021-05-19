@@ -2,7 +2,7 @@
 <html> 
   <head> 
     <link rel="shortcut icon" href="img/logo.png">
-    <title>Deposite su dinero aqui</title> 
+    <title>Inicio de Sesión</title> 
     <link rel="icono" href="Experiencia1_NorambuenaFigueroa_002D/img/logo.png">
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
@@ -64,71 +64,29 @@
   <br>
   <div class="container">
 
-    <form role="form" method="post" action="index.html">
-      <!-- radiobutton ubicados uno debajo del otro-->
-      <div class="form-group">
-        <label>- Seleccione metodo de pago</label>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          Visa
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          Paypal
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          RedCompra
-        </label>
-      </div>
-
+    <div class="form-group">
+      <form role="form" method="post" action="Compra.html">
+        <label for="mail">- E-Mail: </label><br>
+        <input type="email" id="mail" class="form-control">
+        <br>
+        <label for="contra">- Contraseña:</label><br>
+        <input type="password" id="contra" class="form-control" value="">
+        <br>
         <br>
         <hr>
         <br>
-      <!--checknox En la misma linea-->
-       <label>- Seleccione la carta a comprar </label>
-      <br>
-
-      <label for="combocartas">- Seleccione sus cartas:</label>
-      <select id="combocartas" name="combocartas" class="form-control">
-        <option value="balaurmonstruoso">- Balaur Monstruoso</option>
-        <option value="fafnir">- Fafnir</option>
-        <option value="dragondemagmasp">- Dragon de Magma SP</option>
-        <option value="apophissp">- Apophis SP</option>
-        <option value="alicanto">- Alicanto</option>
-        <option value="piratasvandalos">- Piratas Vandalos</option>
-        <option value="baihequan">- Bai He Quan</option>
-        <option value="jofiel">- Jofiel</option>
-        <option value="nganga">- Nganga</option>
-        <option value="hadesdelinframundo">- Hades del Inframundo</option>
-      </select>
-      <br>
-      <label for="quantity"> - Ingrese la cantidad: </label>
-      <input type="number" id="quantity" class="form-control" min="1" max="99">
-      <br>
-      <br>
-      <hr>
-      <br>
-      <button type="submit" class="btn btn-danger" > Siguiente </button> 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+        <button type="submit" class="btn btn-danger" > Ingresar </button>
+        <button type="reset" class="btn btn-danger" > Limpiar </button>
       </form>
-      </div>
-
-
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    
   </div> 
 
-  
+
   <footer class="py-5 bg-black">
     <div class="container">
         <p class="m-0 left text-white small">Instagram: TiendaTCG-Oficial</p>
@@ -141,7 +99,7 @@
     <!-- /.container -->
   </footer>
 
-
 </body> 
+
 
 </html> 
