@@ -2,7 +2,8 @@
 <html> 
   <head> 
     <link rel="shortcut icon" href="img/logo.png">
-    <title>Deposite su dinero aqui</title> 
+    <title>Ingresar Comentarios</title> 
+    <script src="js/Funciones.js"></script>
     <link rel="icono" href="Experiencia1_NorambuenaFigueroa_002D/img/logo.png">
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
@@ -52,7 +53,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Tienda.html">Tienda De Cartas</a>
-                
               </li>
             </ul>
           </div>
@@ -66,72 +66,29 @@
   <br>
   <br>
   <div class="container">
-
-    <form role="form" method="post" action="index.html">
-      <!-- radiobutton ubicados uno debajo del otro-->
-      <div class="form-group">
-        <label>- Seleccione metodo de pago</label>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          Visa
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          Paypal
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          RedCompra
-        </label>
-      </div>
-      <br>
-      <label for="ntarjeta">- Numero de Tarjeta:</label><br>
-        <input type="text" id="ntarjeta" class="form-control" value=""><br>
-        <label for="vverifi">- Valor Verificador:</label><br>
-        <input type="password" id="vverifi" class="form-control" value=""><br>
-
+    <div class="form-group">
+      <form role="form" method="post" action="index.html">
+        <label for="email">- Ingrese su E-Mail: </label>
+        <br>
+        <input type="email" id="email" class="form-control">
+        <br>
+        <br>
+        <label for="comentarios">- Deje aquí sus comentarios</label>
+        <br>
+        <textarea class="form-control" rows="5" id="comentarios" name="comentarios"></textarea>
+        <br>
         <hr>
         <br>
-      <!--checknox En la misma linea-->
-      <label for="combocartas">- Seleccione sus cartas:</label>
-      <select id="combocartas" name="combocartas" class="form-control">
-        <option value="balaurmonstruoso">- Balaur Monstruoso</option>
-        <option value="fafnir">- Fafnir</option>
-        <option value="dragondemagmasp">- Dragon de Magma SP</option>
-        <option value="apophissp">- Apophis SP</option>
-        <option value="alicanto">- Alicanto</option>
-        <option value="piratasvandalos">- Piratas Vandalos</option>
-        <option value="baihequan">- Bai He Quan</option>
-        <option value="jofiel">- Jofiel</option>
-        <option value="nganga">- Nganga</option>
-        <option value="hadesdelinframundo">- Hades del Inframundo</option>
-      </select>
-      <br>
-      <label for="quantity"> - Ingrese la cantidad: </label>
-      <input type="number" id="quantity" class="form-control" min="1" max="99">
-      <br>
-      <br>
-      <hr>
-      <br>
-      <button type="reset" class="btn btn-danger" > Limpiar </button>
-      <a href="Gracias.html" target="_blank" class="btn btn-primary"> Finalizar </a>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+        <input type="button" class="btn btn-danger" onclick="nombrar()" value="Enviar">  </input>
+        <br>
       </form>
-      </div>
+      <br>
+        <br>
+        <br>
+        <br>
+    </div>
   </div> 
 
-  
   <footer class="py-5 bg-black">
     <div class="container">
         <p class="m-0 left text-white small">Instagram: TiendaTCG-Oficial</p>
@@ -144,4 +101,5 @@
     <!-- /.container -->
   </footer>
 </body> 
+
 </html> 
