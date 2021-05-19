@@ -2,7 +2,7 @@
 <html> 
   <head> 
     <link rel="shortcut icon" href="img/logo.png">
-    <title>Deposite su dinero aqui</title> 
+    <title>Inicio de Sesión</title> 
     <link rel="icono" href="Experiencia1_NorambuenaFigueroa_002D/img/logo.png">
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
@@ -64,56 +64,15 @@
   <br>
   <div class="container">
 
-    <form role="form" method="post" action="index.html">
+    <form action="#" method="post" name="sesion">
+      <label for="mail">- E-Mail: </label><br>
+      <input type="email" id="mail" name="mail">
+      <br>
+      <label for="contra">- Contraseña:</label><br>
+      <input type="password" id="contra" name="contra" value="">
+      <br>
       <hr>
-      <!-- radiobutton ubicados uno debajo del otro-->
-      <label>- Seleccione metodo de pago</label>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          Visa
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          Paypal
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
-        <label class="form-check-label" for="radio1">
-          RedCompra
-        </label>
-      </div>
-
-        <br>
-        <hr>
-        <br>
-      <!--checknox En la misma linea-->
-       <label>- Seleccione la carta a comprar </label>
-      <br>
-      <br>
-      <label for="combocartas">- Seleccione sus cartas:</label>
-      <select id="combocartas" name="combocartas">
-        <option value="balaurmonstruoso">- Balaur Monstruoso</option>
-        <option value="fafnir">- Fafnir</option>
-        <option value="dragondemagmasp">- Dragon de Magma SP</option>
-        <option value="apophissp">- Apophis SP</option>
-        <option value="alicanto">- Alicanto</option>
-        <option value="piratasvandalos">- Piratas Vandalos</option>
-        <option value="baihequan">- Bai He Quan</option>
-        <option value="jofiel">- Jofiel</option>
-        <option value="nganga">- Nganga</option>
-        <option value="hadesdelinframundo">- Hades del Inframundo</option>
-      </select>
-      <label for="quantity">- Seleccione las unidades ( 1 - 3 ):</label>
-      <input type="number" id="quantity" name="quantity" min="1" max="3">
-      <hr>
-      <br>
-      <br>
-
-      <button type="submit" class="btn btn-danger" > Siguiente </button> 
+      <button type="submit" class="btn btn-danger" >Comprar</button> 
     </form>
 
   </div> 
